@@ -1,7 +1,7 @@
 *{
     margin: 0;
     font-family: Arial;
-    border: border-box;
+    box-sizing: border-box;
 }
 
 .navbar{
@@ -59,9 +59,12 @@
     display: flex;
     justify-content: space-evenly;
     background-color: orange;
-    width: 620px;
+    width: 100%;
+    max-width: 620px;
     height: 40px;
     border-radius: 4px;
+    flex: 1;
+    margin: 0 10px;
 }
 
 .nav-search:hover{
@@ -169,14 +172,18 @@ font-size: 30px;
 /**shop section**/
 .shop-section{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     background-color:rgb(208, 5, 25);
+    padding: 20px 0;
 }
 
 .box{
     height: 350px;
     width: 21%;
+    min-width: 280px;
     background-color: white;
+    margin: 10px;
 }
 
 .box1{
@@ -209,4 +216,230 @@ font-size: small;
     padding-left: 20px;
     padding-top: 10px;
     font-size: small;
+}
+
+/* Responsive Media Queries */
+
+/* Tablet devices (768px and below) */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px 5px;
+    }
+
+    .nav-logo {
+        height: 40px;
+        width: 80px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .nav-address {
+        order: 4;
+        margin-top: 10px;
+    }
+
+    .nav-search {
+        order: 5;
+        width: 100%;
+        flex: none;
+        margin: 10px 5px;
+        max-width: 100%;
+    }
+
+    .search-select {
+        width: 45px;
+    }
+
+    .nav-signin {
+        font-size: 0.75rem;
+    }
+
+    .nav-return {
+        font-size: 0.75rem;
+    }
+
+    .panel {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px 5px;
+    }
+
+    .panel-ops {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .panel-ops p {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 0.75rem;
+    }
+
+    .hero-section {
+        height: 350px;
+    }
+
+    .hero-box {
+        font-size: 0.75rem;
+        height: auto;
+        padding: 10px;
+    }
+
+    .shop-section {
+        padding: 15px 5px;
+    }
+
+    .box {
+        width: 45%;
+        min-width: 250px;
+        height: 300px;
+    }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-logo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav-address {
+        width: 100%;
+        order: 2;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .add1 {
+        margin-left: 0;
+    }
+
+    .nav-search {
+        width: 100%;
+        order: 3;
+        margin: 10px 0;
+    }
+
+    .search-select {
+        width: 40px;
+        font-size: 0.75rem;
+    }
+
+    .search-input {
+        font-size: 0.85rem;
+    }
+
+    .nav-signin {
+        width: 100%;
+        order: 4;
+        margin: 5px 0;
+    }
+
+    .nav-return {
+        width: 100%;
+        order: 5;
+        margin: 5px 0;
+    }
+
+    .nav-cart {
+        width: 100%;
+        order: 6;
+        margin: 5px 0;
+    }
+
+    .panel {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .panel-all {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .panel-ops {
+        width: 100%;
+        text-align: left;
+    }
+
+    .panel-ops p {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .panel-deals {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .hero-section {
+        height: 250px;
+    }
+
+    .hero-box {
+        font-size: 0.7rem;
+        padding: 8px;
+        width: 95%;
+    }
+
+    .shop-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .box {
+        width: 90%;
+        min-width: auto;
+        margin: 10px 0;
+        height: 280px;
+    }
+
+    .box h2 {
+        font-size: 1rem;
+    }
+}
+
+/* Large tablets (between 481px and 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .nav-address,
+    .nav-signin,
+    .nav-return {
+        padding: 5px;
+    }
+}
+
+/* Very small mobile devices (360px and below) */
+@media (max-width: 360px) {
+    .nav-logo {
+        height: 35px;
+        width: 70px;
+    }
+
+    .logo {
+        height: 35px;
+    }
+
+    .nav-cart i {
+        font-size: 24px;
+    }
+
+    .hero-section {
+        height: 200px;
+    }
+
+    .box {
+        height: 250px;
+    }
 }
