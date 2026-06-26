@@ -1,12 +1,14 @@
-*{
+/* GLOBAL RESET & FONTS */
+* {
     margin: 0;
     font-family: Arial;
     box-sizing: border-box;
 }
 
-.navbar{
+/*NAVIGATION BAR STYLES */
+.navbar {
     height: 60px;
-    background-color:black;
+    background-color: black;
     color: white;
     display: flex;
     align-items: center;
@@ -15,36 +17,38 @@
 
 /**box**/
 
-.nav-logo{
+.nav-logo {
     height: 50px;
     width: 100px;
 }
 
-.border{
+.border {
     border: 2px solid transparent;
 }
 
-.border:hover{
+.border:hover {
     border: 1.5px solid whitesmoke;
 }
 
-.logo{
+/* Logo styling - Kept exactly as your original CSS but with px unit added to width to render properly in browsers */
+.logo {
     background-image: url("amazon_logo.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 50px;
-    width: 100;
+    width: 100px;
 }
 
 /**box2**/
 
-.add1{ 
+.add1 {
     color: #cccc;
     font-size: 0.85rem;
     margin-left: 15px;
 
 }
 
-.add2{
+.add2 {
     font-size: 1rem;
 
 
@@ -55,6 +59,7 @@
     align-items: center;
 }
 
+/* Search bar styling */
 .nav-search {
     display: flex;
     justify-content: space-evenly;
@@ -67,9 +72,9 @@
     margin: 0 10px;
 }
 
-.nav-search:hover{
+.nav-search:hover {
     border: 2px solid white;
- 
+
 }
 
 .search-select {
@@ -95,31 +100,30 @@
     font-size: 1.2rem;
 }
 
-.nav-1{
+.nav-1 {
     font-size: 0.7rem;
 }
 
-.nav-2{
+.nav-2 {
     font-size: 0.85rem;
     font-weight: 700;
 }
 
 .nav-cart i {
-font-size: 30px;
+    font-size: 30px;
 }
 
-.nav-cart{
+.nav-cart {
     font-size: 0.85rem;
     font-weight: 700;
 }
 
-.nav-cart:hover{
+.nav-cart:hover {
     border: 2px solid white;
 }
 
-/**panel**/
-
-.panel{
+/*SUB-NAVBAR PANEL STYLES */
+.panel {
     display: flex;
     height: 40px;
     background-color: #222f3d;
@@ -128,27 +132,27 @@ font-size: 30px;
     justify-content: space-evenly;
 }
 
-.panel-ops p{
+.panel-ops p {
     display: inline;
     margin-left: 14.5px;
 }
 
-.panel-ops{
+.panel-ops {
     width: 70%;
     font-size: 0.8rem;
 }
 
-.panel-deals{
+.panel-deals {
     font-size: 0.9rem;
     font-weight: 700;
 }
 
-.panel-deals:hover{
-    border:2px solid white;
+.panel-deals:hover {
+    border: 2px solid white;
 }
 
-/**hero section**/
-.hero-section{
+/* HERO SECTION STYLES */
+.hero-section {
     background-image: url(hero_image.jpg);
     height: 500px;
     background-size: cover;
@@ -157,7 +161,7 @@ font-size: 30px;
     align-items: flex-end;
 }
 
-.hero-box{
+.hero-box {
     background-color: whitesmoke;
     color: black;
     height: 40px;
@@ -169,16 +173,16 @@ font-size: 30px;
     margin-bottom: 1%;
 }
 
-/**shop section**/
-.shop-section{
+/* SHOP SECTION (PRODUCT CARDS) STYLES */
+.shop-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color:rgb(208, 5, 25);
+    background-color: rgb(208, 5, 25);
     padding: 20px 0;
 }
 
-.box{
+.box {
     height: 350px;
     width: 21%;
     min-width: 280px;
@@ -186,15 +190,16 @@ font-size: 30px;
     margin: 10px;
 }
 
-.box1{
-background-image: url(box1_img.jpg);
-background-size: cover;
-padding-left: 20px;
-padding-top: 10px;
-font-size: small;
+/* Row 1 cards background images */
+.box1 {
+    background-image: url(box1_img.jpg);
+    background-size: cover;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: small;
 }
 
-.box2{
+.box2 {
     background-image: url(box2_img.jpg);
     background-size: cover;
     padding-left: 20px;
@@ -202,7 +207,7 @@ font-size: small;
     font-size: small;
 }
 
-.box3{
+.box3 {
     background-image: url(box3_img.jpg);
     background-size: cover;
     padding-left: 20px;
@@ -210,7 +215,7 @@ font-size: small;
     font-size: small;
 }
 
-.box4{
+.box4 {
     background-image: url(box4_img.jpg);
     background-size: cover;
     padding-left: 20px;
@@ -218,7 +223,135 @@ font-size: small;
     font-size: small;
 }
 
-/* Responsive Media Queries */
+/* Row 2 cards background images */
+.box5 {
+    background-image: url(box5_img.jpg);
+    background-size: cover;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: small;
+}
+
+.box6 {
+    background-image: url(box6_img.jpg);
+    background-size: cover;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: small;
+}
+
+.box7 {
+    background-image: url(box7_img.jpg);
+    background-size: cover;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: small;
+}
+
+.box8 {
+    background-image: url(box8_img.jpg);
+    background-size: cover;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: small;
+}
+
+/*  FOOTER STYLES */
+footer {
+    width: 100%;
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.foot-panel1:hover {
+    background-color: #485769;
+}
+
+.foot-panel2 {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0;
+}
+
+.foot-panel2 ul {
+    list-style-type: none;
+}
+
+.foot-panel2 p {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.foot-panel2 li {
+    margin-top: 8px;
+}
+
+.foot-panel2 a {
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 0.85rem;
+}
+
+.foot-panel2 a:hover {
+    text-decoration: underline;
+}
+
+.foot-panel3 {
+    background-color: #232f3e;
+    border-top: 1px solid #3a4553;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer scale modifier to adjust the logo without changing the base .logo class */
+.logo-footer-scale {
+    transform: scale(0.8);
+}
+
+.foot-panel4 {
+    background-color: #131a22;
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.foot-panel4 .pages {
+    margin-bottom: 10px;
+}
+
+.foot-panel4 a {
+    color: #dddddd;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.foot-panel4 a:hover {
+    text-decoration: underline;
+}
+
+.foot-panel4 .copyright {
+    color: #a7acb2;
+    margin-top: 10px;
+}
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES (As in original CSS)
+   ========================================== */
 
 /* Tablet devices (768px and below) */
 @media (max-width: 768px) {
@@ -413,6 +546,7 @@ font-size: small;
 
 /* Large tablets (between 481px and 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
+
     .nav-address,
     .nav-signin,
     .nav-return {
