@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon</title>
+    <!-- Font Awesome CDN for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- HEADER SECTION: Navigation bar & Panel -->
     <header>
+        <!-- Main Navbar -->
         <div class="navbar">
+            
+            <!-- Navbar Logo (Kept EXACTLY as in your original code) -->
             <div class="nav-logo border">
                 <div class="logo">
 
                 </div>
             </div>
+            
+            <!-- Delivery Address -->
             <div class="nav-address border">
                 <p class="add1">Deliver to</p>
                 <div class="add-icon">
@@ -22,56 +31,145 @@
                     <p class="add2">India</p>
                 </div>
             </div>
+            
+            <!-- Search Bar Section -->
             <div class="nav-search border">
                 <select class="search-select">
                     <option>All</option>
                     <option>1</option>
                     <option>2</option>
                 </select>
-                    <input placeholder="search products" class="search-input">
-                    <div class="search-icon">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
+                <input placeholder="search products" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <div class="nav-signin border">
-                    <p class="nav-1">Hello, sign in</p>
-                    <p class="nav-2">Account & lists</p>
-                </div>
-                <div class="nav-return border">
-                    <p class="nav-1">Returns</p>
-                    <p class="nav-2">& Orders</p>
-                </div>
-                <div class="nav-cart">
-                    <i class="fa-duotone fa-solid fa-cart-shopping"></i>
-                    Cart
-                </div>
+            </div>
+            
+            <!-- Hello, Sign in -->
+            <div class="nav-signin border">
+                <p class="nav-1">Hello, sign in</p>
+                <p class="nav-2">Account & lists</p>
+            </div>
+            
+            <!-- Returns & Orders -->
+            <div class="nav-return border">
+                <p class="nav-1">Returns</p>
+                <p class="nav-2">& Orders</p>
+            </div>
+            
+            <!-- Shopping Cart -->
+            <div class="nav-cart">
+                <i class="fa-duotone fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
         </div>
-                <div class="panel">
-                    <div class="panel-all">
-                        <i class="fa-solid fa-bars"></i>
-                        All
-                    </div>
-                    <div class="panel-ops">
-                        <p>Today's Deal</p>
-                        <p>Customer Service</p>
-                        <p>Registry</p>
-                        <p>Gift Cards</p>
-                        <p>Sell</p>
-                    </div>
-                    <div class="panel-deals">
-                        Shop deals in Electronics
-                    </div>
-                </div>
+
+        <!-- Sub-Navbar menu bar (Panel) -->
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <p>Today's Deal</p>
+                <p>Customer Service</p>
+                <p>Registry</p>
+                <p>Gift Cards</p>
+                <p>Sell</p>
+            </div>
+            <div class="panel-deals">
+                Shop deals in Electronics
+            </div>
+        </div>
      </header>
-                <div class="hero-section">
-                    <div class="hero-box"><p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="www.amazon.com">Click here to go to amazon.in</a></p>
-                    </div>
-                </div>
-        <div class="shop-section">
-        <div class="box1 box"><h2>Gaming accessories</h2></div>
-        <div class="box2 box"><h2>Shop for your home essentials</h2></div>
-        <div class="box3 box"><h2>Shop deals in Fashion</h2></div>
-        <div class="box4 box"><h2>Shop Reading Books</h2></div>
-    </div>
+
+     <!-- HERO BANNER SECTION -->
+     <div class="hero-section">
+         <div class="hero-box">
+             <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="www.amazon.com">Click here to go to amazon.in</a></p>
+         </div>
+     </div>
+
+     <!--SHOP SECTION: Grid of Product Cards-->
+     <div class="shop-section">
+         <!-- Row 1 of Product Cards (Your original cards) -->
+         <div class="box1 box"><h2>Gaming accessories</h2></div>
+         <div class="box2 box"><h2>Shop for your home essentials</h2></div>
+         <div class="box3 box"><h2>Shop deals in Fashion</h2></div>
+         <div class="box4 box"><h2>Shop Reading Books</h2></div>
+         
+         <!-- Row 2 of Product Cards (Completing the grid) -->
+         <div class="box5 box"><h2>Electronics & Gadgets</h2></div>
+         <div class="box6 box"><h2>Beauty Picks & Care</h2></div>
+         <div class="box7 box"><h2>Toys & Kids Games</h2></div>
+         <div class="box8 box"><h2>Sports & Fitness Gear</h2></div>
+     </div>
+
+     <!--FOOTER SECTION: Directory links & Copyright -->
+     <footer>
+         <!-- Back to top button bar -->
+         <div class="foot-panel1">
+             <a href="#" style="color: white; text-decoration: none;">Back to Top</a>
+         </div>
+         
+         <!-- Footer multi-column links directory -->
+         <div class="foot-panel2">
+             <ul>
+                 <p>Get to Know Us</p>
+                 <li><a href="#">Careers</a></li>
+                 <li><a href="#">Blog</a></li>
+                 <li><a href="#">About Amazon</a></li>
+                 <li><a href="#">Investor Relations</a></li>
+                 <li><a href="#">Amazon Devices</a></li>
+                 <li><a href="#">Amazon Science</a></li>
+             </ul>
+             
+             <ul>
+                 <p>Make Money with Us</p>
+                 <li><a href="#">Sell products on Amazon</a></li>
+                 <li><a href="#">Sell on Amazon Business</a></li>
+                 <li><a href="#">Become an Affiliate</a></li>
+                 <li><a href="#">Advertise Your Products</a></li>
+                 <li><a href="#">Self-Publish with Us</a></li>
+             </ul>
+             
+             <ul>
+                 <p>Amazon Payment Products</p>
+                 <li><a href="#">Amazon Business Card</a></li>
+                 <li><a href="#">Shop with Points</a></li>
+                 <li><a href="#">Reload Your Balance</a></li>
+                 <li><a href="#">Amazon Currency Converter</a></li>
+             </ul>
+             
+             <ul>
+                 <p>Let Us Help You</p>
+                 <li><a href="#">Amazon and COVID-19</a></li>
+                 <li><a href="#">Your Account</a></li>
+                 <li><a href="#">Your Orders</a></li>
+                 <li><a href="#">Shipping Rates & Policies</a></li>
+                 <li><a href="#">Returns & Replacements</a></li>
+                 <li><a href="#">Help</a></li>
+             </ul>
+         </div>
+         
+         <!-- Footer Logo panel (Reuses your exact logo class, scaled slightly for footer) -->
+         <div class="foot-panel3">
+             <div class="logo logo-footer-scale"></div>
+         </div>
+         
+         <!-- Footer copyright & legal conditions -->
+         <div class="foot-panel4">
+             <div class="pages">
+                 <a href="#">Conditions of Use</a>
+                 <a href="#">Privacy Notice</a>
+                 <a href="#">Consumer Health Data Privacy Disclosure</a>
+                 <a href="#">Your Ads Privacy Choices</a>
+             </div>
+             <div class="copyright">
+                 © 1996-2026, Amazon.com, Inc. or its affiliates
+             </div>
+         </div>
+     </footer>
+
 </body>
 </html>
